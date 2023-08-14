@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color:aquamarine;
+        }
+    </style>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Correo electrónico:</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+                <label for="msg">Referencia:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+            <li>
+
+            </li>
+            <li>
+                <label for="myDate">Agende su cita </label>
+                <input
+                  type="date"
+                  name="myDate"
+                  min="2023-01-01"
+                  max="2023-12-22"
+                  step="1,2,3,4,5,6,7"
+                  id="myDate" />
+                <input type="time" name="time" id="time" />
+                </li>
+            <li class="button">
+                <button type="submit">Guardar Cita</button>
+              </li>
+          </ul>
+    </form>
+    <h1>Ubicacion</h1>
+    <img src="src/img/ubi.jpg" alt="img">
+    <h1>Mas Informacion</h1>
+    <div id="Redes">
+        <a href="https://w.app/EHFAS1"><img src="src/img/whatsappp (2).jpg" alt="whatsapp"></a>
+        <a href="https://www.facebook.com/weymaralejandro.arenasleon.9"><img src="src/img/faceboook.jpg" alt="facebook"></a>
+        <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="whatsapp"></a>
+    </div>
+
+</body>
+</html>
