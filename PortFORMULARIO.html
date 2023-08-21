@@ -5,54 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <style>
-        *{
-            background-color:aquamarine;
-        }
-    </style>
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-            <li>
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-              <label for="mail">Correo electrónico:</label>
-              <input type="email" id="mail" name="user_mail" />
-            </li>
-            <li>
-                <label for="msg">Referencia:</label>
-                <textarea id="msg" name="user_message"></textarea>
+  <header class="boton__inicio">
+    <nav>
+       <img src="src/img/logodemipagina.jpg" class="menu__img">
+       <ul class="menu">
+           <li><a href="index4.html" class="menu">Home</a></li>
+           <li><a href="menu4.html"  class="menu">Skills</a></li>
+           <li><a href="menu4.1.html" class="menu">Projects</a></li>
+           <li><a href="PortFORMULARIO.html" class="menu">Contact</a></li>
+           <a href="https://w.app/EHFAS1"><img src="src/img/whatsappp (2).jpg" alt="whatsapp" class="menu__redes"></a>
+           <a href="https://www.facebook.com/weymaralejandro.arenasleon.9"><img src="src/img/faceboook.jpg" alt="facebook" class="menu__redes"></a>
+           <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="github" class="menu__redes"></a>
+       </ul>
+   </nav>
+  </header>
+  <section>
+    <article class="formulario__medio">
+      <nav>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+              <li class="formulario__texto">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="user_name" class="formulario__texto"/>
               </li>
-            <li>
-
-            </li>
-            <li>
-                <label for="myDate">Agende su cita </label>
-                <input
-                  type="date"
-                  name="myDate"
-                  min="2023-01-01"
-                  max="2023-12-22"
-                  step="1,2,3,4,5,6,7"
-                  id="myDate" />
-                <input type="time" name="time" id="time" />
-                </li>
-            <li class="button">
-                <button type="submit">Guardar Cita</button>
+              <li class="formulario__texto">
+                  <label for="mail">Correo electrónico:</label>
+                  <input type="email" id="mail" name="user_mail" class="formulario__texto"/>
               </li>
+              <li class="formulario__texto">
+                  <label for="msg">Referencia:</label>
+                  <textarea id="msg" name="user_message" class="formulario__texto"></textarea>
+              </li>
+              <li class="formulario__texto">
+                  <label for="myDate">Agende su cita </label>
+                  <input
+                    type="date"
+                    name="myDate"
+                    min="2023-01-01"
+                    max="2023-12-22"
+                    step="1,2,3,4,5,6,7"
+                    id="myDate" class="formulario__texto"/>
+                  <input type="time" name="time" id="time" class="formulario__texto" />
+              </li>
+              <dt class="formulario__texto" class="button">
+                  <button type="submit" class="formulario__texto">Guardar Cita</button>
+              </dt>
           </ul>
-    </form>
-    <h1>Ubicacion</h1>
-    <img src="src/img/ubi.jpg" alt="img">
-    <h1>Mas Informacion</h1>
-    <div id="Redes">
-        <a href="https://w.app/EHFAS1"><img src="src/img/whatsappp (2).jpg" alt="whatsapp"></a>
-        <a href="https://www.facebook.com/weymaralejandro.arenasleon.9"><img src="src/img/faceboook.jpg" alt="facebook"></a>
-        <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="whatsapp"></a>
-    </div>
-
-</body>
+      </form>
+      <h1 class="formulario__textoo">Ubicacion</h1>
+      <img src="src/img/ubi.jpg" alt="img">
+      <h1 class="formulario__textoo">Mas Informacion</h1>
+      </nav>
+      <ul class="formulario__img">
+        <li>
+          <a href="https://w.app/EHFAS1"><img src="src/img/whatsappp (2).jpg" alt="whatsapp" class="formulario__img"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/weymaralejandro.arenasleon.9"><img src="src/img/faceboook.jpg" alt="facebook" class="formulario__img"></a>
+        </li>
+        <li>
+          <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="whatsapp" class="formulario__img"></a>
+        </li>
+      </ul>
+    </article>
+  </section>
+  </body>
 </html>

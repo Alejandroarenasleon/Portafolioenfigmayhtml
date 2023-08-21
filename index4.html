@@ -4,48 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <style>
-        *{
-           background-color: rgb(225, 189, 233); 
-        }
-    </style>
-    <div id="logo" >
-        <img src="src/img/logodemipagina.jpg" alt="logo">
-    </div>
-    <div id="Menu">
-        <li><a href="index4.html">Home</a></li>
-        <li><a href="menu4.html">Skills</a></li>
-        <li><a href="menu4.1.html">Projects</a></li>
-        <li><a href="PortFORMULARIO.html">Contact</a></li>
-    </div>
-    <div id="Redes">
-        <a href="https://w.app/EHFAS1"><img src="src/img/whatsappp (2).jpg" alt="whatsapp"></a>
-        <a href="https://www.facebook.com/weymaralejandro.arenasleon.9"><img src="src/img/faceboook.jpg" alt="facebook"></a>
-        <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="whatsapp"></a>
-    </div>
-    <div id="imagenmia">
-        <a href="menu4.2.html"><img src="src/img/mifoto.png" alt="creador"></a>
-    </div>
-    <div id="NOMBRE">
-        <h3>HOLA MI NOMBRE ES</h3>
-        <h1>ALEJADRO ARENAS</h1>
-        <h5>Designer & Programmer-University</h5>
-    </div>
-    <div id="talentos">
-        <h2><li><a href="menu4.html">Skills</a></li></h2>
-        <img src="src/img/pseint.png" alt="pseint">
-        <img src="src/img/python.png" alt="python">
-        <img src="src/img/html.png" alt="html">
-        <img src="src/img/figmass.jpg" alt="figma">
-    </div>
-    <div id="proyectos">
-        <h2><li><a href="menu4.1.html">Recent Projects</a></li></h2>
-        <img src="src/img/proyecto.jpg" alt="proyecto1">
-        <img src="src/img/proyectos.jpg" alt="proyecto2">
-        <img src="src/img/proyectoss.jpg" alt="proyecto3">
-        <img src="src/img/proyectosss.jpg" alt="proyecto4">
-    </div>
+    <header class="boton__inicio">
+        <nav>
+            <img src="src/img/logodemipagina.jpg" class="menu__img">
+            <ul class="menu">
+                <li><a href="index4.html" class="menu">Home</a></li>
+                <li><a href="menu4.html"  class="menu">Skills</a></li>
+                <li><a href="menu4.1.html" class="menu">Projects</a></li>
+                <li><a href="PortFORMULARIO.html" class="menu">Contact</a></li>
+                <a href="https://w.app/EHFAS1"><img src="src/img/whatsappp (2).jpg" alt="whatsapp" class="menu__redes"></a>
+                <a href="https://www.facebook.com/weymaralejandro.arenasleon.9"><img src="src/img/faceboook.jpg" alt="facebook" class="menu__redes"></a>
+                <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="github" class="menu__redes"></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="boton__medio">
+            <nav>
+                <ul class="articulo">
+                    <a href="menu4.2.html"><img src="src/img/mifoto.png" alt="creador" width="450"></a>
+                    <li class="articulo__intro">HOLA MI NOMBRE ES</li>
+                    <li class="articulo__nombre">ALEJADRO ARENAS</li>
+                    <li class="articulo__profesion">Designer & Programmer-University</li>
+                    <li><a href="menu4.html" class="articulo__intro">Skills</a></li>
+                    <img src="src/img/pseint.png" alt="pseint" class="articulo__codigos">
+                    <img src="src/img/python.png" alt="python" class="articulo__codigos">
+                    <img src="src/img/html.png" alt="html" class="articulo__codigos">
+                    <img src="src/img/figmass.jpg" alt="figma" class="articulo__codigos">
+                    <li><a href="menu4.1.html" class="articulo__intro">Recent Projects</a></li>
+                    <img src="src/img/proyecto.jpg" alt="proyecto1" class="articulo__img">
+                    <img src="src/img/proyectos.jpg" alt="proyecto2" class="articulo__img">
+                    <img src="src/img/proyectoss.jpg" alt="proyecto3" class="articulo__img">
+                    <img src="src/img/proyectosss.jpg" alt="proyecto4" class="articulo__img">
+                </ul>
+            </nav>
+        </article>
+    </section>
 </body>
 </html>
