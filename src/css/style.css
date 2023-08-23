@@ -7,9 +7,9 @@
 :root{
     --link-color:aqua;
     --texto-color:black;
-    --borde-color:black;
+    --borde-color:white;
     --nombre-color:rgb(65, 167, 245);
-    --degrade-color:rgb(220, 100, 206);
+    --degrade-color:rgba(220, 100, 206, 0.805);
     --degrade-colors:rgb(246, 248, 246);
 }
 body:first{
@@ -40,11 +40,13 @@ body:first{
     width: 200px;
     height: 100px ;
     margin-right: 10%;
+    border-radius: 20px;
 }
 .menu__redes{
     width: 50px;
     height: 50px;
     margin: 0 10px;
+    border-radius: 20px;
 }
 .menu__redes:hover{
     width: 55px;
@@ -59,21 +61,37 @@ body:first{
     background:linear-gradient(var(--degrade-color),var(--degrade-colors));
 }
 .articulo{
+    display: flex;
     font-style: italic;
+}
+.articulo__vi{
     list-style: none;
     text-decoration: none;
+    margin-top: 150px;
+}
+.fondo{
+    width:755px;
+    height:170px;
+    padding:15px;
+    margin-bottom:40px;
+    border-radius: 20px;
+    background:linear-gradient(var(--degrade-colors),rgba(142, 139, 141, 0.252));
+}
+.fondo__creador{
+    width:500px;
+    height:670px;
+    padding:15px;
+    border-radius: 400px;
+    background:linear-gradient(var(--degrade-colors),rgba(220, 100, 206, 0.319));
 }
 .articulo__nombre{
     font-size: 60px;
-    text-decoration: none;
     color:var(--nombre-color);
-    list-style: none;
 }
 .articulo__intro{
     color:var(--texto-color);
     font-size: 35px;
     text-decoration: none;
-    list-style: none;
 }
 .articulo__intro:hover{
     color:var(--link-color);
@@ -81,24 +99,27 @@ body:first{
 .articulo__profesion{
     color:var(--texto-color);
     font-size: 20px;
-    text-decoration: none;
-    list-style: none;
 }
 .articulo__codigos{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 .articulo__codigos:hover{
-    width: 105px;
-    height: 105px;
+    width: 55px;
+    height: 55px;
 }
 .articulo__img{
-    width: 500px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-left:25px ;
 }
 .boton__medio{
     width:1465px;
-    height:1550px;
+    height:700px;
     padding:15px;
     border:5px solid var(--borde-color);
     margin:10px;
