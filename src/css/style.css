@@ -1,3 +1,13 @@
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 *{
     margin: 0%;
     box-sizing: border-box;
@@ -12,9 +22,6 @@
     --degrade-color:rgba(220, 100, 206, 0.805);
     --degrade-colors:rgb(246, 248, 246);
 }
-body:first{
-    color: aqua;
-}
 .menu{
     list-style: none;
     font-size: 20px;
@@ -23,6 +30,15 @@ body:first{
     color:var(--texto-color); 
     display: inline-flex;
     padding: 0px 20px;
+    margin-top: 10px;
+}
+.menu li{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.199);
+}
+.menu li:hover{
+    background-color: blueviolet;
 }
 .menu:hover{
     color:var(--link-color);
@@ -31,15 +47,10 @@ body:first{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 0%;
-    padding-right: 0%;
-    font-weight:bold;
 }
 .menu__img{
     width: 200px;
     height: 100px ;
-    margin-right: 10%;
     border-radius: 20px;
 }
 .menu__redes{
@@ -53,11 +64,7 @@ body:first{
     height: 55px;
 }
 .boton__inicio{
-    width:1465px;
-    height:150px;
-    padding:15px;
     border:5px solid var(--borde-color);
-    margin:10px;
     background:linear-gradient(var(--degrade-color),var(--degrade-colors));
 }
 .articulo{
@@ -68,43 +75,61 @@ body:first{
     list-style: none;
     text-decoration: none;
     margin-top: 150px;
+    animation-name: slidein;
+    animation-duration: 3s;
 }
 .fondo{
-    width:755px;
-    height:170px;
     padding:15px;
     margin-bottom:40px;
+    margin-left: 25px;
     border-radius: 20px;
     background:linear-gradient(var(--degrade-colors),rgba(142, 139, 141, 0.252));
 }
 .fondo__creador{
-    width:500px;
-    height:670px;
+    width:450px;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+.fondo__creador{
+    margin-right: 25px;
     padding:15px;
     border-radius: 400px;
     background:linear-gradient(var(--degrade-colors),rgba(220, 100, 206, 0.319));
 }
+.fondo__creador:hover{
+    background-color: blueviolet;
+}
 .articulo__nombre{
     font-size: 60px;
     color:var(--nombre-color);
+    list-style: none;
 }
 .articulo__intro{
     color:var(--texto-color);
     font-size: 35px;
     text-decoration: none;
+    list-style: none;
 }
-.articulo__intro:hover{
+.articulo__introo{
+    color:var(--texto-color);
+    font-size: 35px;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 25px;
+}
+.articulo__introo:hover{
     color:var(--link-color);
 }
 .articulo__profesion{
     color:var(--texto-color);
     font-size: 20px;
+    list-style: none;
 }
 .articulo__codigos{
     width: 50px;
     height: 50px;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 .articulo__codigos:hover{
     width: 55px;
@@ -115,53 +140,87 @@ body:first{
     height: 100px;
     border-radius: 10px;
     margin-top:20px;
-    margin-left:25px ;
+    margin-left:35px ;
 }
 .boton__medio{
-    width:1465px;
-    height:700px;
-    padding:15px;
     border:5px solid var(--borde-color);
-    margin:10px;
     background:linear-gradient(var(--degrade-colors),var(--degrade-color));
+}
+.skill{
+    display: flex;
 }
 .skill__img{
     width: 300px;
     height: 300px;
     margin: 10px;
+    animation-name: slidein;
+    animation-duration: 3s;
 }
 .skill__porcentaje{
     width: 1000px;
     height: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    animation-name: slidein;
+    animation-duration: 3s;
 }
 .skill__medio{
-    width:1465px;
-    height:1650px;
-    padding:15px;
     border:5px solid var(--borde-color);
-    margin:10px;
     background:linear-gradient(var(--degrade-colors),var(--degrade-color));
+}
+.proyecto{
+    display: flex;
+    list-style: none;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+.proyecto__texto{
+    font-size: 35px;
+    font-style: italic;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+    animation-name: slidein;
+    animation-duration: 3s;
 }
 .proyecto__img{
     width: 210px;
-    height: 210px;
-    margin: 10px 50px;
-    list-style: none;
-    display: flex;
+    height: 170px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.proyecto__img{
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 20px;
+}
+.proyecto__img:hover{
+    background-color:blueviolet;
 }
 .proyecto__medio{
-    width:1465px;
-    height:350px;
-    padding:15px;
     border:5px solid var(--borde-color);
-    margin:10px;
     background:linear-gradient(var(--degrade-colors),var(--degrade-color));
 }
+.certificado{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.formulario__medio nav ul{
+    margin-top: 30px;
+}
 .formulario__texto{
+    border-radius: 20px;
     font-size: 25px;
     font-style: italic;
     list-style: none;
     text-align: center;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+.formulario__medio nav nav img{
+    border-radius: 20px;
+    animation-name: slidein;
+    animation-duration: 3s;
 }
 .formulario__img{
     width: 150px;
@@ -169,29 +228,35 @@ body:first{
     margin: 20px;
     list-style: none;
     display: flex;
+    border-radius: 20px;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+.formulario{
+    display: flex;
 }
 .formulario__textoo{
     font-size: 35px;
     font-style: italic;
-    list-style: none;}
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 210px;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
 .formulario__medio{
-    width:1465px;
-    height:1200px;
-    padding:15px;
     border:5px solid var(--borde-color);
-    margin:10px;
     background:linear-gradient(var(--degrade-colors),var(--degrade-color));
 }
 .informacion__texto{
     font-size: 25px;
     font-style: italic;
-    list-style: none;
+    display: flex;
+    animation-name: slidein;
+    animation-duration: 3s;
 } 
 .informacion__medio{
-    width:1465px;
-    height:900px;
-    padding:15px;
     border:5px solid var(--borde-color);
-    margin:10px;
     background:linear-gradient(var(--degrade-colors),var(--degrade-color));
 }
