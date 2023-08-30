@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
 </head>
 <body>
   <header class="boton__inicio">
@@ -24,37 +25,59 @@
 </header>
   <section>
     <article class="formulario__medio">
-      <nav>
-        <form action="/my-handling-form-page" method="post">
-          <ul>
-              <li class="formulario__texto">
-                  <label for="name">Nombre:</label>
-                  <input type="text" id="name" name="user_name" class="formulario__texto"/>
-              </li>
-              <li class="formulario__texto">
-                  <label for="mail">Correo electrónico:</label>
-                  <input type="email" id="mail" name="user_mail" class="formulario__texto"/>
-              </li>
-              <li class="formulario__texto">
-                  <label for="msg">Asunto:</label>
-                  <textarea id="msg" name="user_message" class="formulario__texto"></textarea>
-              </li>
-              <li class="formulario__texto">
-                  <label for="myDate">Fecha y hora</label>
-                  <input
-                    type="date"
-                    name="myDate"
-                    min="2023-01-01"
-                    max="2023-12-22"
-                    step="1,2,3,4,5,6,7"
-                    id="myDate" class="formulario__texto"/>
-                  <input type="time" name="time" id="time" class="formulario__texto" />
-              </li>
-              <dt class="formulario__texto" class="button">
-                  <button type="submit" style="background-color: blueviolet;" class="formulario__texto">Enviar</button>
-              </dt>
-          </ul>
-      </form>
+      <nav class="container">
+          <form action="/my-handling-form-page" method="post">
+              <ul class="formulario__texto">
+                <nav class="row justify-content-start">
+                    <nav class="col-4">
+                        <li class="formulario__texto">
+                          <label for="name">Nombre:</label>
+                          <input type="text" id="name" alt="user_name" class="formulario__texto"/>
+                        </li>
+                    </nav>
+                    <nav class="col-4">
+                      <li class="formulario__texto">
+                        <label for="name">Apellido:</label>
+                        <input type="text" id="name" alt="user_name" class="formulario__texto"/>
+                      </li>
+                    </nav>
+                    <nav class="col-4">
+                        <li class="formulario__texto">
+                          <label for="mail">Correo electrónico:</label>
+                          <input type="email" id="mail" alt="user_mail" class="formulario__texto"/>
+                        </li>
+                    </nav>
+                </nav>
+                <nav class="row justify-content-start">
+                  <nav class="col-4">
+                    <li class="formulario__texto">
+                      <label for="msg">Asunto:</label>
+                      <textarea id="msg" name="user_message" class="formulario__texto"></textarea>
+                    </li>
+                  </nav>
+                  <nav class="col-4">
+                    <li class="formulario__texto">
+                      <label for="myDate">Fecha y hora</label>
+                      <input
+                        type="date"
+                        name="myDate"
+                        min="2023-01-01"
+                        max="2023-12-22"
+                        step="1,2,3,4,5,6,7"
+                        id="myDate" class="formulario__texto"/>
+                      <input type="time" name="time" id="time" class="formulario__texto" />
+                    </li>
+                  </nav>
+                </nav>
+                <nav class="row justify-content-end">
+                  <nav class="col-4">
+                    <dt class="formulario__texto" class="button">
+                      <button type="submit" style="background-color: blueviolet;" class="formulario__texto">Enviar</button>
+                    </dt>
+                  </nav>
+                </nav>
+              </ul>
+        </form>
       </nav>
       <nav class="formulario">
         <nav>
@@ -74,7 +97,7 @@
               <a href="https://github.com/Alejandroarenasleon "><img src="src/img/githubb.jpg" alt="whatsapp" class="formulario__img"></a>
             </li>
             <li>
-              <a href=mailto:weymararenasare676@gmail.com><img src="src/img/gmail.png" alt="gmail" class="formulario__img"></a>
+              <a href="mailto:weymararenasare676@gmail.com"><img src="src/img/gmail.png" alt="gmail" class="formulario__img"></a>
             </li>
           </ul>
         </nav>
